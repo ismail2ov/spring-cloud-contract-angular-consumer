@@ -43,3 +43,29 @@ We have created a simple Angular eCommerce backend with integration tests that u
 ``` shell
  npm run integration-tests
 ```
+
+### Run the project
+
+- Run the stub runner 
+``` shell
+ docker run -d --rm  --name ecommerce-catalog-stub-server -p 8080:8080 ismail2ov/ecommerce-catalog-stubs
+```
+
+- Run the Angular project
+``` shell
+ npm start
+```
+
+- Open in your browser the path [http://localhost:4200/](http://localhost:4200/) to see the UI
+
+- Stop the stub runner
+``` shell
+ docker stop ecommerce-catalog-stub-server
+```
+
+## More info
+- https://github.com/ismail2ov/contract-testing-demo
+- https://github.com/ismail2ov/docker-spring-cloud-contract-stub-runner
+- https://hub.docker.com/r/ismail2ov/spring-cloud-contract-stub-runner
+- https://github.com/ismail2ov/docker-spring-cloud-contract-stub-runner-examples
+
