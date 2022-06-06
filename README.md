@@ -15,7 +15,7 @@ We have created a simple application with Spring Boot that does not yet have an 
 
 - Compile and package the code skipping the tests because we don't have any logic implemented yet  
 ``` shell
- mvn clean package -DskipTests
+ mvn clean package
 ```  
 
 - Build Docker image with the stubs  
@@ -43,4 +43,3 @@ We have created a simple Angular eCommerce backend with integration tests that u
 ``` shell
  npm run integration-tests
 ```
-
