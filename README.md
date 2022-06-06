@@ -11,10 +11,14 @@ We have created a simple application with Spring Boot that does not yet have an 
 - Go to the catalog folder  
 ``` shell
  cd catalog
-```
+```  
 
 - Compile and package the code skipping the tests because we don't have any logic implemented yet  
 ``` shell
  mvn clean package -DskipTests
-```
+```  
 
+- Build Docker image with the stubs  
+``` shell
+ docker build -f StubrunnerDockerfile --tag ismail2ov/ecommerce-catalog-stubs .
+```
