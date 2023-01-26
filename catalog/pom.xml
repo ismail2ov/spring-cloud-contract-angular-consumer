@@ -12,7 +12,7 @@
 	<artifactId>catalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>catalog</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Producer</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.3</spring-cloud.version>
@@ -69,6 +69,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<testFramework>JUNIT5</testFramework>
+					<baseClassForTests>com.github.ismail2ov.catalog.BaseTestClass</baseClassForTests>
 				</configuration>
 			</plugin>
 			<plugin>
