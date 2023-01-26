@@ -22,3 +22,25 @@ We have created a simple application with Spring Boot that does not yet have an 
 ``` shell
  docker build -f StubrunnerDockerfile --tag ismail2ov/ecommerce-catalog-stubs .
 ```
+
+
+## Consumer
+We have created a simple Angular eCommerce backend with integration tests that use stub runner as mock server.  
+
+### Run the integration tests
+
+- Go to the eCommerce folder  
+``` shell
+ cd ecommerce
+```  
+
+- Installs a package and any packages that it depends on  
+``` shell
+ npm install
+```
+
+- Run the integration tests  
+``` shell
+ npm run integration-tests
+```
+
